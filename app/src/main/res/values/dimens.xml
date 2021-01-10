@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="constrainMarginTop">10dp</dimen>
+    <dimen name="textSize">50sp</dimen>
+    <dimen name="textSizeButton">30sp</dimen>
+    <dimen name="textViewMarginTop">50dp</dimen>
+    <dimen name="heightTextView">250dp</dimen>
+    <dimen name="constrainMarginBottom">50dp</dimen>
+    <dimen name="textViewMarginStart">10dp</dimen>
+    <dimen name="textViewMarginEnd">10dp</dimen>
+</resources>

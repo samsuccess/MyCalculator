@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">MyCalculator</string>
+    <string name="butSign">+/-</string>
+    <string name="butDiv">/</string>
+    <string name="butMult">*</string>
+    <string name="butSub">-</string>
+    <string name="but1">1</string>
+    <string name="but2">2</string>
+    <string name="but3">3</string>
+    <string name="butSum">+</string>
+    <string name="but4">4</string>
+    <string name="but5">5</string>
+    <string name="but6">6</string>
+    <string name="but7">7</string>
+    <string name="but8">8</string>
+    <string name="but9">9</string>
+    <string name="butRes">=</string>
+    <string name="but0">0</string>
+    <string name="butPoint">.</string>
+    <string name="butClear">C</string>
+    <string name="butProcent">%</string>
+    <string name="butBack">bs</string>
 </resources>
