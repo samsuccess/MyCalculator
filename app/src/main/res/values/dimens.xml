@@ -6,6 +6,6 @@
     <dimen name="textViewMarginTop">50dp</dimen>
     <dimen name="heightTextView">250dp</dimen>
     <dimen name="constrainMarginBottom">50dp</dimen>
-    <dimen name="textViewMarginStart">10dp</dimen>
-    <dimen name="textViewMarginEnd">10dp</dimen>
+    <dimen name="textViewMarginStart">1dp</dimen>
+    <dimen name="textViewMarginEnd">1dp</dimen>
 </resources>

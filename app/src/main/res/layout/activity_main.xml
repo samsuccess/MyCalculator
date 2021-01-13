@@ -16,14 +16,12 @@
         android:layout_height="@dimen/heightTextView"
         android:layout_marginTop="@dimen/textViewMarginTop"
         android:textSize="@dimen/textSize"
-        android:background="@color/purple_500"
+        android:background="@color/purple_200"
         android:layout_marginEnd="@dimen/textViewMarginEnd"
         android:layout_marginStart="@dimen/textViewMarginStart"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="spread" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <Button
         android:id="@+id/btnSign"
