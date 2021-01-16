@@ -1,8 +1,11 @@
 package ru.example.mycalculator;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.Display;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -18,15 +21,34 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private boolean procent;
     private TextView display;
     Logic logic = new Logic();
+    private static final String KEYS = "logicKeys";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initViews();
-
-//
     }
+
+    //сохранение данных
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle saveInstanceState) {
+        super.onSaveInstanceState(saveInstanceState);
+        saveInstanceState.putParcelable(KEYS, logic);
+    }
+
+    //восстановление данных
+    @Override
+    protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        logic = (Logic) savedInstanceState.getParcelable(KEYS);
+//        setTextDisplay();
+    }
+
+   /* private void setTextDisplay() {
+        display.setText(String.format(Locale.getDefault(), "%f", logic.getNum1()));
+        display.setText(String.format(Locale.getDefault(), "%f", logic.getNum2()));
+    }*/
 
     private void initViews() {
         display = findViewById(R.id.editText);
@@ -289,7 +311,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             }
         }
-
     }
 }
 
