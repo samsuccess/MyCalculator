@@ -20,4 +20,5 @@
     <string name="butClear">C</string>
     <string name="butProcent">&#37;</string>
     <string name="butBack">&#9003;</string>
+    <string name="_0">0</string>
 </resources>
