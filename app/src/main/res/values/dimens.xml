@@ -8,4 +8,6 @@
     <dimen name="constrainMarginBottom">50dp</dimen>
     <dimen name="textViewMarginStart">1dp</dimen>
     <dimen name="textViewMarginEnd">1dp</dimen>
+    <dimen name="widthTextView">0dp</dimen>
+    <dimen name="editTextMarginBottom">0dp</dimen>
 </resources>

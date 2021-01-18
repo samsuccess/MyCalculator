@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textSize">40sp</dimen>
+    <dimen name="textSizeButton">20sp</dimen>
+    <dimen name="textViewMarginTop">20dp</dimen>
+    <dimen name="widthTextView">200dp</dimen>
+    <dimen name="textViewMarginStart">1dp</dimen>
+    <dimen name="textViewMarginEnd">1dp</dimen>
+    <dimen name="editTextMarginBottom">20dp</dimen>
+</resources>
