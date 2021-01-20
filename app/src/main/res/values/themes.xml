@@ -13,4 +13,43 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="style_buttons">
+        <item name="android:textSize">@dimen/textSizeButton</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="backgroundTint">@color/grey</item>
+        <item name="fontFamily">cursive</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="style_editText">
+        <item name="background">@color/grey</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/textSize</item>
+        <item name="fontFamily">casual</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="style_constrain">
+        <item name="android:background">@color/grey</item>
+    </style>
+
+    <style name="style_buttons_land">
+        <item name="android:textSize">@dimen/textSizeButton</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="backgroundTint">@color/grey</item>
+        <item name="fontFamily">casual</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="style_editText_land">
+        <item name="background">@color/grey</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/textSize</item>
+        <item name="fontFamily">casual</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginStart">@dimen/textViewMarginStart</item>
+        <item name="android:layout_marginTop">@dimen/textViewMarginTop</item>
+        <item name="android:layout_marginBottom">@dimen/editTextMarginBottom</item>
+    </style>
 </resources>
