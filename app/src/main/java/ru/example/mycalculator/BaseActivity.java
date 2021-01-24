@@ -13,21 +13,28 @@ abstract class BaseActivity extends AppCompatActivity {
     static final int orangeCodeTheme = 1;
     static final int darkCodeTheme = 2;
     static final int blueCodeTheme = 3;
+    static final int defaultCodeTheme = 4;
 
     protected int saveTheme;
+    protected int choosTheme;
+
+    public void setChoosTheme(int choosTheme) {
+        this.choosTheme = choosTheme;
+    }
+
+    public int getChoosTheme() {
+        return choosTheme;
+    }
 
     public void setSaveTheme(int saveTheme) {
         this.saveTheme = saveTheme;
     }
 
-    public int getSaveTheme() {
-        return saveTheme;
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setSaveTheme(getCodeStyle(orangeCodeTheme));
+        setSaveTheme(getAppTheme(defaultCodeTheme));
+        setChoosTheme(getAppTheme(defaultCodeTheme));
     }
 
     protected int getAppTheme(int codeStyle) {
@@ -51,7 +58,7 @@ abstract class BaseActivity extends AppCompatActivity {
         return sharedPref.getInt(theme, codeStyle);
     }
 
-    public void setTheme(int codeStyle) {
+    public void setAppTheme(int codeStyle) {
         SharedPreferences sharedPref = getSharedPreferences(nameSharedPreference, MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPref.edit();
         editor.putInt(theme, codeStyle);

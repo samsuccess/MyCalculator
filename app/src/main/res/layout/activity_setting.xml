@@ -45,6 +45,12 @@
             android:layout_height="wrap_content"
             android:text="@string/blue_theme" />
 
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/radioButtonDefault"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/default_theme" />
+
     </RadioGroup>
 
     <com.google.android.material.button.MaterialButton

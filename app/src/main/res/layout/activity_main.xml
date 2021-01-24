@@ -12,6 +12,7 @@
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/editText"
+        style="@style/style_editText"
         android:layout_width="@dimen/widthEditText"
         android:layout_height="@dimen/heightTextView"
         android:layout_marginStart="@dimen/textViewMarginStart"
