@@ -1,18 +1,14 @@
 package ru.example.mycalculator;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.Display;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import java.util.Locale;
+import androidx.annotation.NonNull;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends BaseActivity implements View.OnClickListener {
 
     private boolean sum;
     private boolean sub;
@@ -51,7 +47,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }*/
 
     private void initViews() {
+
         display = findViewById(R.id.editText);
+
+        Button buttonSet = findViewById(R.id.btnSet);
+        buttonSet.setOnClickListener(this);
 
         Button button0 = findViewById(R.id.btn0);
         button0.setOnClickListener(this);
@@ -309,6 +309,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 sum = true;
                 display.setText("0");
                 break;
+            }
+            case R.id.btnSet: {
+                Intent i = new Intent(this, SettingActivity.class);
+                startActivity(i);
             }
         }
     }

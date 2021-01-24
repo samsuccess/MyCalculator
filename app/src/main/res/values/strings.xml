@@ -21,4 +21,10 @@
     <string name="butProcent">&#37;</string>
     <string name="butBack">&#9003;</string>
     <string name="_0">0</string>
+    <string name="butSet">&#9913;</string>
+    <string name="orange_theme">ORANGE</string>
+    <string name="dark_theme">DARK</string>
+    <string name="blue_theme">BLUE</string>
+    <string name="select_theme_calculator">Select Theme Calculator</string>
+    <string name="back">Back</string>
 </resources>

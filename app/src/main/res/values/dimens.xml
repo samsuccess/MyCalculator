@@ -10,4 +10,8 @@
     <dimen name="textViewMarginEnd">1dp</dimen>
     <dimen name="widthTextView">0dp</dimen>
     <dimen name="editTextMarginBottom">0dp</dimen>
+    <dimen name="widthEditText">0dp</dimen>
+    <dimen name="butSetMarginTop">240dp</dimen>
+    <dimen name="butSet_width">50dp</dimen>
+    <dimen name="butSetMarginEnd">12dp</dimen>
 </resources>
