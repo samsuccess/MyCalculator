@@ -27,13 +27,13 @@ public class SettingActivity extends BaseActivity {
         initRadioButton(findViewById(R.id.radioButtonBlue), blueCodeTheme);
         initRadioButton(findViewById(R.id.radioButtonDefault), defaultCodeTheme);
         RadioGroup rg = findViewById(R.id.radioButtons);
-//        ((MaterialRadioButton) rg.getChildAt(getCodeStyle(defaultCodeTheme))).setChecked(true);
+//        ((MaterialRadioButton) rg.getChildAt(getChooseTheme(defaultCodeTheme))).setChecked(true);
     }
 
-    private void initRadioButton(View button, final int codestyle) {
+    private void initRadioButton(View button, final int code) {
         button.setOnClickListener(v -> {
             setSaveTheme(getChoosTheme());
-            setAppTheme(codestyle);
+            setAppTheme(code);
             recreate();
 
         });
@@ -42,8 +42,7 @@ public class SettingActivity extends BaseActivity {
     private void initButtonBack() {
         Button butBack = findViewById(R.id.but_back);
         butBack.setOnClickListener(v -> {
-            Intent intent = new Intent(this, MainActivity.class);
-            startActivity(intent);
+            setResult(RESULT_OK);
             finish();
         });
     }

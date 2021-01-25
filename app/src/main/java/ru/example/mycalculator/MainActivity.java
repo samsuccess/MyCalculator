@@ -7,6 +7,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends BaseActivity implements View.OnClickListener {
@@ -19,6 +20,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     private TextView display;
     Logic logic = new Logic();
     private static final String KEYS = "logicKeys";
+    private static final int REQUEST_CODE = 10;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -118,6 +120,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         buttonSum.setOnClickListener(this);
 
     }
+
 
     @Override
     public void onClick(View v) {
@@ -316,8 +319,19 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
             }
             case R.id.btnSet: {
                 Intent i = new Intent(this, SettingActivity.class);
-                startActivity(i);
+                startActivityForResult(i, REQUEST_CODE);
             }
+        }
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode != REQUEST_CODE) {
+            super.onActivityResult(requestCode, resultCode, data);
+        }
+        if (resultCode == RESULT_OK) {
+            recreate();
         }
     }
 }
